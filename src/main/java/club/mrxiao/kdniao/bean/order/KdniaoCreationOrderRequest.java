@@ -1,5 +1,6 @@
 package club.mrxiao.kdniao.bean.order;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Builder;
 import lombok.Data;
@@ -355,4 +356,12 @@ public class KdniaoCreationOrderRequest implements Serializable {
      */
     @JSONField(name="Commoditys")
     private List<KdniaoAddCommodity> commoditys;
+
+    /**
+     * 对象转json字符串
+     * @return json字符串
+     */
+    public String toJson(){
+        return JSON.toJSONString(this);
+    }
 }
