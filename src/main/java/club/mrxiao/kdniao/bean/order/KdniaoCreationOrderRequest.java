@@ -345,7 +345,7 @@ public class KdniaoCreationOrderRequest implements Serializable {
      * </pre>
      */
     @JSONField(name="AddServices")
-    private KdniaoAddServices addServices;
+    private List<KdniaoAddService> addServices;
 
 
     /**

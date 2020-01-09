@@ -8,4 +8,10 @@ package club.mrxiao.kdniao.api;
  * @since 2020-01-09
  */
 public interface KdniaoService {
+
+    /**
+     * 获取电子面单api接口
+     * @return 电子面单api接口
+     */
+    KdniaoSurfaceSheetService getKdniaoSurfaceSheetService();
 }

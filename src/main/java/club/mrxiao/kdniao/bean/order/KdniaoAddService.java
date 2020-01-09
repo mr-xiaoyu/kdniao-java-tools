@@ -15,12 +15,12 @@ import java.io.Serializable;
  */
 @Data
 @Builder
-public class KdniaoAddServices implements Serializable {
+public class KdniaoAddService implements Serializable {
 
     private static final long serialVersionUID = -8943897222364499553L;
 
     /**
-     * 增值服务名称(数组形式，可以有多个增值服务
+     * 增值服务名称
      * <pre>
      * 是否必填： 一定条件下可选
      * </pre>

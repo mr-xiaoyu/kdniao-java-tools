@@ -2,6 +2,7 @@ package club.mrxiao.kdniao.api.impl;
 
 
 import club.mrxiao.kdniao.api.KdniaoService;
+import club.mrxiao.kdniao.api.KdniaoSurfaceSheetService;
 
 /**
  * <pre>
@@ -11,4 +12,11 @@ import club.mrxiao.kdniao.api.KdniaoService;
  * @since 2020-01-09
  */
 public class KdniaoServiceImpl implements KdniaoService {
+
+    private KdniaoSurfaceSheetService surfaceSheetService = new KdniaoSurfaceSheetServiceImpl(this);
+
+    @Override
+    public KdniaoSurfaceSheetService getKdniaoSurfaceSheetService() {
+        return this.surfaceSheetService;
+    }
 }
